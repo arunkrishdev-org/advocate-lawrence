@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230D1B3E'/%3E%3Cg stroke='%23C9A84C' stroke-width='2.5' stroke-linecap='round' fill='none'%3E%3Cline x1='32' y1='10' x2='32' y2='54'/%3E%3Cline x1='18' y1='16' x2='46' y2='16'/%3E%3Cellipse cx='18' cy='28' rx='8' ry='4'/%3E%3Cellipse cx='46' cy='28' rx='8' ry='4'/%3E%3Cline x1='10' y1='24' x2='26' y2='24'/%3E%3Cline x1='38' y1='24' x2='54' y2='24'/%3E%3Cline x1='24' y1='54' x2='40' y2='54'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230D1B3E'/%3E%3Cg stroke='%23C9A84C' stroke-width='2.5' stroke-linecap='round' fill='none'%3E%3Cline x1='32' y1='10' x2='32' y2='54'/%3E%3Cline x1='18' y1='16' x2='46' y2='16'/%3E%3Cellipse cx='18' cy='28' rx='8' ry='4'/%3E%3Cellipse cx='46' cy='28' rx='8' ry='4'/%3E%3Cline x1='10' y1='24' x2='26' y2='24'/%3E%3Cline x1='38' y1='24' x2='54' y2='24'/%3E%3Cline x1='24' y1='54' x2='40' y2='54'/%3E%3C/g%3E%3C/svg%3E">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Advocate Lawrence | Trusted Legal Expert in Thanjavur | Criminal, Civil & Family Law</title>
 <meta name="description" content="Advocate Lawrence – Experienced lawyer in Natarajapuram, Thanjavur with 18+ years at Thanjavur District Court. Criminal Defence, Civil, Divorce, Consumer Court, Cheque Bounce. Book a consultation today.">
@@ -330,10 +332,11 @@
   body.tamil .lang-en.inline { display: none; }
 
   /* RESPONSIVE */
+  /* ── TABLET (≤1024px) ── */
   @media (max-width: 1024px) {
-    .hero-inner { grid-template-columns: 1fr; gap: 40px; padding-bottom: 80px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 48px 24px 80px; }
     .hero-photo-wrap { order: -1; }
-    .hero-photo-bg { width: 280px; height: 340px; }
+    .hero-photo-bg { width: 260px; height: 320px; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-accent-box { bottom: -16px; right: -16px; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
@@ -346,23 +349,191 @@
     .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
     .process-steps::before { display: none; }
   }
+
+  /* ── MOBILE (≤768px) ── */
   @media (max-width: 768px) {
+    html { font-size: 15px; }
     .nav-links, .nav-cta { display: none; }
     .hamburger { display: flex; }
-    .container { padding: 0 20px; }
-    .section { padding: 64px 0; }
-    .hero-inner { padding: 40px 20px 72px; }
-    .hero-actions { flex-direction: column; }
-    .hero-stats { gap: 20px; }
-    .services-grid, .testimonials-grid, .blog-grid { grid-template-columns: 1fr; }
-    .form-grid { grid-template-columns: 1fr; }
-    .about-qualifications { grid-template-columns: 1fr; }
-    .trust-bar-inner { gap: 20px; }
-    .blog-header { flex-direction: column; align-items: flex-start; gap: 16px; }
-    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-    .footer-bottom { flex-direction: column; text-align: center; }
-    .booking-form, .contact-form { padding: 28px 20px; }
+    .nav-inner { padding: 14px 16px; }
+    .nav-logo-name { font-size: 0.92rem; }
+    .nav-logo-sub { font-size: 0.55rem; }
+    .container { padding: 0 16px; }
+    .section { padding: 52px 0; }
+
+    /* HERO */
+    .hero-inner { grid-template-columns: 1fr; gap: 28px; padding: 32px 16px 64px; text-align: center; }
+    .hero-content { display: flex; flex-direction: column; align-items: center; }
+    .hero-photo-wrap { order: -1; }
+    .hero-photo-bg { width: 220px; height: 270px; }
+    .hero-badge { font-size: 0.62rem; padding: 5px 12px; }
+    .hero-title { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+    .hero-sub { font-size: 0.9rem; max-width: 100%; }
+    .hero-actions { flex-direction: column; align-items: stretch; width: 100%; }
+    .hero-actions .btn { justify-content: center; padding: 13px 20px; }
+    .hero-stats { gap: 16px; justify-content: center; }
+    .hero-stat-num { font-size: 1.8rem; }
     .hero-card, .hero-card2 { display: none; }
+
+    /* TRUST BAR */
+    .trust-bar-inner { gap: 12px; flex-direction: column; align-items: flex-start; padding: 0 16px; }
+    .trust-item { font-size: 0.78rem; }
+
+    /* ABOUT */
+    .about-grid { grid-template-columns: 1fr; gap: 60px; }
+    .about-accent-box { bottom: -20px; right: 0; padding: 16px 20px; }
+    .about-accent-num { font-size: 2.2rem; }
+    .about-qualifications { grid-template-columns: 1fr; gap: 10px; }
+    .values-row { gap: 8px; }
+    .value-chip { padding: 8px 14px; font-size: 0.75rem; }
+
+    /* SERVICES */
+    .services-grid { grid-template-columns: 1fr; gap: 16px; }
+    .service-card { padding: 24px 20px; }
+
+    /* PROCESS */
+    #process { padding: 52px 0; }
+    .process-steps { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .process-steps::before { display: none; }
+    .process-step { padding: 0 8px; }
+    .step-num { width: 46px; height: 46px; font-size: 1.2rem; }
+
+    /* BOOKING */
+    .booking-grid { grid-template-columns: 1fr; gap: 32px; }
+    .booking-form { padding: 24px 16px; }
+    .form-grid { grid-template-columns: 1fr; gap: 12px; }
+    .fee-cards { gap: 10px; }
+    .fee-card { padding: 14px 16px; }
+    .contact-quick-btns .btn { justify-content: center; }
+
+    /* TESTIMONIALS */
+    .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+    .testimonial-card { padding: 24px 18px; }
+    .testimonial-text { font-size: 0.86rem; }
+
+    /* BLOG */
+    .blog-grid { grid-template-columns: 1fr; gap: 16px; }
+    .blog-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .blog-thumb { height: 160px; }
+
+    /* FAQ */
+    .faq-grid { grid-template-columns: 1fr; gap: 32px; }
+    .faq-q { font-size: 0.88rem; }
+
+    /* CONTACT */
+    .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+    .contact-form { padding: 24px 16px; }
+
+    /* FOOTER */
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
+    .footer-lang { justify-content: center; }
+
+    /* SECTION LABELS & TITLES */
+    .section-title { font-size: clamp(1.7rem, 6vw, 2.4rem); }
+    .section-sub { font-size: 0.92rem; }
+    .section-label { font-size: 0.65rem; }
+
+    /* FORMS */
+    .form-input, .form-select, .form-textarea { font-size: 16px; } /* prevents iOS zoom */
+    .form-submit { padding: 14px; font-size: 0.88rem; }
+
+    /* BUTTONS */
+    .btn { font-size: 0.84rem; padding: 12px 20px; }
+
+    /* MOBILE MENU */
+    .mobile-menu { padding: 16px 16px 24px; top: 70px; }
+    .mobile-menu a { font-size: 0.95rem; padding: 12px 0; }
+  }
+
+  /* ── SMALL MOBILE (≤480px — Vivo, small Androids) ── */
+  @media (max-width: 480px) {
+    html { font-size: 14px; }
+    .nav-logo-name { font-size: 0.85rem; }
+    .nav-logo-sub { display: none; }
+    .nav-logo-emblem { width: 34px; height: 34px; font-size: 1.1rem; }
+
+    /* Hero tighter on small screen */
+    .hero-inner { padding: 24px 12px 56px; gap: 20px; }
+    .hero-photo-bg { width: 180px; height: 220px; }
+    .hero-title { font-size: clamp(1.65rem, 9vw, 2.1rem); line-height: 1.12; }
+    .hero-badge { font-size: 0.58rem; letter-spacing: 0.08em; }
+    .hero-sub { font-size: 0.85rem; }
+    .hero-stats { gap: 12px; }
+    .hero-stat-num { font-size: 1.6rem; }
+    .hero-stat-label { font-size: 0.68rem; }
+
+    /* Container tighter */
+    .container { padding: 0 12px; }
+
+    /* Trust bar compact */
+    .trust-bar { padding: 18px 0; }
+    .trust-bar-inner { gap: 10px; }
+    .trust-item { font-size: 0.72rem; gap: 6px; }
+    .trust-item .icon { width: 0.85em; height: 0.85em; }
+
+    /* About */
+    .about-accent-box { right: 8px; bottom: -16px; padding: 12px 16px; }
+    .about-accent-num { font-size: 1.9rem; }
+    .about-accent-text { font-size: 0.68rem; }
+    .about-bio { font-size: 0.9rem; }
+    .qual-item { padding: 10px 12px; }
+    .qual-item-label { font-size: 0.8rem; }
+    .qual-item-text { font-size: 0.75rem; }
+
+    /* Services */
+    .service-card { padding: 20px 16px; }
+    .service-title { font-size: 1.1rem; }
+    .service-desc { font-size: 0.8rem; }
+
+    /* Process */
+    .process-steps { grid-template-columns: 1fr; gap: 20px; }
+    .step-num { width: 42px; height: 42px; font-size: 1.1rem; margin-bottom: 14px; }
+
+    /* Booking form */
+    .booking-form { padding: 20px 14px; }
+    .form-title { font-size: 1.3rem; margin-bottom: 18px; }
+    .fee-card { padding: 12px 14px; }
+    .fee-card-price { font-size: 1.1rem; }
+
+    /* Testimonials */
+    .testimonial-quote { font-size: 2.8rem; }
+    .testimonial-text { font-size: 0.82rem; }
+    .testimonial-name { font-size: 0.82rem; }
+    .testimonial-avatar { width: 40px; height: 40px; font-size: 1rem; }
+
+    /* Blog */
+    .blog-thumb { height: 140px; }
+    .blog-title { font-size: 1.05rem; }
+    .blog-body { padding: 18px 14px; }
+
+    /* Contact */
+    .contact-card { padding: 16px 14px; }
+    .contact-card-val { font-size: 0.85rem; }
+
+    /* Footer */
+    footer { padding: 40px 0 20px; }
+    .footer-desc { font-size: 0.78rem; }
+    .footer-copy { font-size: 0.68rem; }
+    .nav-logo-name { font-size: 0.88rem; }
+
+    /* Divider & sections */
+    .section { padding: 44px 0; }
+    .divider { margin: 14px 0 24px; }
+
+    /* Modal responsive */
+    #langModal > div { padding: 32px 20px 24px !important; margin: 0 8px; }
+  }
+
+  /* ── EXTRA SMALL (≤360px — very small phones) ── */
+  @media (max-width: 360px) {
+    .hero-title { font-size: 1.55rem; }
+    .hero-photo-bg { width: 160px; height: 200px; }
+    .hero-actions .btn { padding: 11px 16px; font-size: 0.8rem; }
+    .container { padding: 0 10px; }
+    .section { padding: 36px 0; }
+    .nav-inner { padding: 12px 12px; }
+    #langModal > div { padding: 24px 14px 20px !important; }
   }
 </style>
 <style>
@@ -1387,18 +1558,21 @@
 </style>
 
 <script>
-/* ─────────────────────────────────────────────────────────────
-   AI-powered Tamil welcome voice
-   Uses Anthropic TTS API → streams PCM audio → Web Audio API
-   Falls back to best available browser voice if API unavailable
-───────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════
+   TAMIL WELCOME VOICE
+   ▸ Plays on EVERY page open (first visit + returning)
+   ▸ Continues after modal closes (background audio)
+   ▸ Works on Chrome, Firefox, Safari, Android (Vivo etc.)
+════════════════════════════════════════════════════════ */
 
-const TAMIL_TEXT = 'வணக்கம். வழக்கறிஞர் லாரன்சின் இணையதளத்திற்கு உங்களை அன்புடன் வரவேற்கிறோம்.';
+const TAMIL_PARTS = [
+  'வணக்கம்.',
+  'வழக்கறிஞர் லாரன்சின் இணையதளத்திற்கு உங்களை அன்புடன் வரவேற்கிறோம்.'
+];
 
-let currentAudio = null; // holds AudioBufferSourceNode so we can stop it
-let welcomePlayed = false; // guard against playing welcome audio more than once
+let _hasSpoken = false; // prevent double-firing in same page session
 
-/* ── Wave indicator helpers ── */
+/* ── Waveform animation ── */
 function startMiniWave() {
   document.querySelectorAll('.mini-bar').forEach(b => b.classList.add('playing'));
   const st = document.getElementById('audioStatusText');
@@ -1407,151 +1581,76 @@ function startMiniWave() {
 function stopMiniWave() {
   document.querySelectorAll('.mini-bar').forEach(b => b.classList.remove('playing'));
   const st = document.getElementById('audioStatusText');
-  if (st) st.textContent = '🔊 வரவேற்பு முடிந்தது';
+  if (st) st.textContent = '✓ வரவேற்பு முடிந்தது';
 }
 
-/* ── Stop any playing audio ── */
-function stopAudio() {
-  if (currentAudio) {
-    try { currentAudio.stop(); } catch(e) {}
-    currentAudio = null;
-  }
-  if (window._synthRef) window._synthRef.cancel();
-}
-
-/* ── PRIMARY: Anthropic TTS API ── */
-async function playViaAnthropicTTS() {
-  startMiniWave();
-  try {
-    const resp = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 256,
-        messages: [{
-          role: 'user',
-          content: TAMIL_TEXT
-        }],
-        // Request audio output
-        tools: [],
-        // Use built-in TTS via the speech endpoint
-      })
-    });
-
-    // If Anthropic TTS endpoint is available, decode and play
-    if (resp.ok) {
-      const data = await resp.json();
-      // Check if audio content returned
-      const audioBlock = data?.content?.find(b => b.type === 'audio' || b.type === 'tool_result');
-      if (audioBlock?.data) {
-        await playBase64Audio(audioBlock.data);
-        return true;
-      }
-    }
-  } catch(e) {}
-  return false; // fall through to next method
-}
-
-/* ── SECONDARY: Google Translate TTS via server proxy (avoids CORS) ── */
-async function playViaGoogleTTS() {
-  const text = encodeURIComponent(TAMIL_TEXT);
-  const url = `/api/tts?text=${text}&lang=ta`;
-  try {
-    startMiniWave();
-    const audio = new Audio();
-    audio.src = url;
-    audio.onended = stopMiniWave;
-    audio.onerror = () => { stopMiniWave(); playViaBrowserTTS(); };
-    await audio.play();
-    currentAudio = { stop: () => { audio.pause(); audio.src=''; } };
-    return true;
-  } catch(e) {
-    return false;
-  }
-}
-
-/* ── Play raw base64 PCM/MP3 audio via Web Audio API ── */
-async function playBase64Audio(b64) {
-  const binary = atob(b64);
-  const bytes = new Uint8Array(binary.length);
-  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-  const ctx = new (window.AudioContext || window.webkitAudioContext)();
-  const buffer = await ctx.decodeAudioData(bytes.buffer);
-  const source = ctx.createBufferSource();
-  source.buffer = buffer;
-  source.connect(ctx.destination);
-  source.onended = stopMiniWave;
-  source.start(0);
-  currentAudio = source;
-}
-
-/* ── FALLBACK: Best-tuned browser Web Speech API ── */
-function playViaBrowserTTS() {
+/* ── Core speech using Web Speech API ── */
+function _doSpeak() {
   const synth = window.speechSynthesis;
-  if (!synth) { stopMiniWave(); welcomePlayed = false; return; }
-  window._synthRef = synth;
-  synth.cancel();
+  if (!synth) return;
 
-  // Split into two utterances for more natural pacing
-  const parts = [
-    'வணக்கம்.',
-    'வழக்கறிஞர் லாரன்சின் இணையதளத்திற்கு உங்களை அன்புடன் வரவேற்கிறோம்.'
-  ];
+  synth.cancel(); // clear queue
 
   const voices = synth.getVoices();
 
-  // Strict priority order for best Tamil voice
-  const tamilVoice =
-    voices.find(v => v.lang === 'ta-IN' && !v.localService) ||  // cloud ta-IN first
+  // Priority: cloud ta-IN > any ta-IN > ta > tamil-named > Indian voice
+  const bestVoice =
+    voices.find(v => v.lang === 'ta-IN' && !v.localService) ||
     voices.find(v => v.lang === 'ta-IN') ||
     voices.find(v => v.lang === 'ta') ||
     voices.find(v => v.lang.startsWith('ta')) ||
     voices.find(v => /tamil/i.test(v.name)) ||
-    voices.find(v => /lekha|google|microsoft.*ind/i.test(v.name)) ||
+    voices.find(v => /lekha|google ind|microsoft.*ind/i.test(v.name)) ||
     null;
 
-  let idx = 0;
-  function speakPart() {
-    if (idx >= parts.length) { stopMiniWave(); return; }
-    const utt = new SpeechSynthesisUtterance(parts[idx]);
-    utt.lang   = 'ta-IN';
-    utt.rate   = idx === 0 ? 0.75 : 0.82;  // slower for "வணக்கம்", natural for rest
-    utt.pitch  = 1.08;
-    utt.volume = 1;
-    if (tamilVoice) utt.voice = tamilVoice;
-    utt.onend = () => { idx++; speakPart(); };
-    utt.onerror = () => { stopMiniWave(); welcomePlayed = false; };
-    synth.speak(utt);
+  let i = 0;
+  function next() {
+    if (i >= TAMIL_PARTS.length) { stopMiniWave(); return; }
+    const u = new SpeechSynthesisUtterance(TAMIL_PARTS[i]);
+    u.lang   = 'ta-IN';
+    u.rate   = i === 0 ? 0.72 : 0.80;
+    u.pitch  = 1.1;
+    u.volume = 1;
+    if (bestVoice) u.voice = bestVoice;
+    u.onstart = () => { if (i === 0) startMiniWave(); };
+    u.onend   = () => { i++; next(); };
+    u.onerror = stopMiniWave;
+    synth.speak(u);
   }
-
-  startMiniWave();
-  speakPart();
+  next();
 }
 
-/* ── Main entry: try methods in order ── */
-async function playWelcomeAudio(fromGesture) {
-  if (welcomePlayed) return;
-  welcomePlayed = true;
+/* ── Entry: wait for voices, then speak ── */
+function playWelcomeAudio() {
+  if (_hasSpoken) return;
+  _hasSpoken = true;
 
-  if (fromGesture) {
-    // User gesture available — Audio.play() and Google TTS will work
-    const ok = await playViaGoogleTTS();
-    if (!ok) playViaBrowserTTS();
-  } else {
-    // No user gesture — browser SpeechSynthesis is more permissive with autoplay
-    // Audio.play() would be blocked by autoplay policy on most browsers
-    playViaBrowserTTS();
+  const synth = window.speechSynthesis;
+  if (!synth) return;
+
+  // If voices already available — speak now
+  if (synth.getVoices().length > 0) {
+    _doSpeak();
+    return;
   }
+
+  // Wait for voices to load (needed on Chrome/Android first load)
+  let spoken = false;
+  synth.addEventListener('voiceschanged', function handler() {
+    if (spoken) return;
+    spoken = true;
+    synth.removeEventListener('voiceschanged', handler);
+    _doSpeak();
+  });
+
+  // Fallback: some browsers never fire voiceschanged — try after delay
+  setTimeout(() => { if (!spoken) { spoken = true; _doSpeak(); } }, 900);
 }
 
-/* ── Close modal & apply language ── */
+/* ── Language picker: close modal, keep audio running ── */
 function chooseLang(lang) {
-  // NOTE: audio intentionally NOT stopped — welcome voice continues in background
-  // If audio hasn't played yet (autoplay was blocked), play now on user gesture
-  if (!welcomePlayed) {
-    playWelcomeAudio(true);
-  }
+  // Trigger voice on gesture (handles mobile autoplay restriction)
+  if (!_hasSpoken) playWelcomeAudio();
 
   const modal = document.getElementById('langModal');
   modal.style.transition = 'opacity 0.3s ease';
@@ -1570,32 +1669,24 @@ function chooseLang(lang) {
   }
 }
 
-/* ── On page load ── */
+/* ── Run on every page load ── */
 window.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('advocateLang');
 
   if (saved) {
+    // Returning visitor — skip modal but STILL play welcome voice
     document.getElementById('langModal').style.display = 'none';
     setLang(saved);
     (saved === 'ta' ? document.getElementById('btnTa') : document.getElementById('btnEn'))
       .classList.add('active');
+
+    // Play after short delay so page renders first
+    setTimeout(playWelcomeAudio, 400);
     return;
   }
 
-  // First visit: modal shows, audio starts simultaneously after brief render delay
-  setTimeout(() => {
-    // Ensure voices are loaded before speaking
-    if (window.speechSynthesis) {
-      const v = window.speechSynthesis.getVoices();
-      if (v.length > 0) {
-        playWelcomeAudio(false);
-      } else {
-        window.speechSynthesis.addEventListener('voiceschanged', () => playWelcomeAudio(false), { once: true });
-        // Also try after 1s in case voiceschanged never fires (some browsers)
-        setTimeout(() => playWelcomeAudio(false), 1000);
-      }
-    }
-  }, 500);
+  // First-time visitor — show modal + play voice together
+  setTimeout(playWelcomeAudio, 500);
 });
 </script>
 
